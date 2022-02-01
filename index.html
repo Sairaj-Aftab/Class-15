@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <section class="checkbox">
+      <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card w-25 my-3 mx-auto">
+                  <div class="card-body">
+                    <input type="checkbox" value="Java" id="java" class="skill"> <label for="java">Java</label><br>
+                    <input type="checkbox" value="WordPress" id="wordpress" class="skill"> <label for="wordpress">WordPress</label><br>
+                    <input type="checkbox" value="React" id="react" class="skill"> <label for="react">React</label><br>
+                    <ul class="list-group">
+                      
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4 class="text-center mb-0 mt-5">Analog Clock</h4>
+            <div class="clock shadow">
+              <div class="h"></div>
+              <div class="m"></div>
+              <div class="s"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h4 class="mb-0 mt-5">Calculator</h4>
+            <div class="cal shadow p-3">
+              <div class="cal-scr text-right">
+                <div class="top">0</div>
+                <div class="ans"></div>
+              </div>
+              <div class="cal-butt">
+                <div class="button" onclick="cal(00)">00</div>
+                <div class="button" onclick="cal('%')">%</div>
+                <div class="button" onclick="all_clear()">AC</div>
+                <div class="button" onclick="back()">CE</div>
+                <div class="button" onclick="cal(7)">7</div>
+                <div class="button" onclick="cal(8)">8</div>
+                <div class="button" onclick="cal(9)">9</div>
+                <div class="button" onclick="cal('/')">/</div>
+                <div class="button" onclick="cal(4)">4</div>
+                <div class="button" onclick="cal(5)">5</div>
+                <div class="button" onclick="cal(6)">6</div>
+                <div class="button" onclick="cal('*')">*</div>
+                <div class="button" onclick="cal(1)">1</div>
+                <div class="button" onclick="cal(2)">2</div>
+                <div class="button" onclick="cal(3)">3</div>
+                <div class="button" onclick="cal('-')">-</div>
+                <div class="button" onclick="cal(0)">0</div>
+                <div class="button" onclick="cal('.')">.</div>
+                <div class="button" onclick="ans()">=</div>
+                <div class="button" onclick="cal('+')">+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+      
+
+    <!-- Optional JavaScript -->
+    <script src="function.js"></script>
+    <script src="app.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  </body>
+</html>

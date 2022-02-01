@@ -1,0 +1,103 @@
+.clock{
+    width: 415px;
+    height: 415px;
+    background: #ddd;
+    margin: 20px auto 0;
+    background: url(./img/clock.png) center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #111;
+    border-radius: 50%;
+}
+.clock .s{
+    width: 0;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(15deg);
+}
+.clock .s::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 135px;
+    background: url(./img/sec.png) center center;
+    background-size: cover;
+}
+.clock .m{
+    width: 0;
+    height: 327px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(45deg);
+}
+.clock .m::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 325px;
+    background: url("./img/min.png") center center / cover;
+}
+.clock .h{
+    width: 0;
+    height: 203px;
+    transform: rotate(65deg);
+    display: flex;
+    justify-content: center;
+}
+.clock .h::before {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 200px;
+    background: url(./img/hour.png) center center;
+    background-size: cover;
+}
+
+/* ------Calculator-------- */
+
+.cal{
+    width: 286px;
+    margin: 30px auto 50px;
+    border-radius: 0 0 6px 6px;
+}
+.cal .cal-scr{
+    height: 80px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 6px 6px 0 0;
+    background: #fafafa;
+    font-size: 25px;
+    font-weight: 500;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.cal .top{
+    overflow: hidden;
+}
+.cal .button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #ddd;
+}
+.cal .button:hover{
+    background: #fafafa;
+    cursor: pointer;
+}
